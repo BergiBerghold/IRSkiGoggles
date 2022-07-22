@@ -14,7 +14,7 @@ a = np.rot90(a)
 a = np.concatenate((a, a), 0)
 a = np.ascontiguousarray(a)
 
-overlay = PiOverlayRenderer(parent=None, source=memoryview(a), resolution=(480, 800),
+#overlay = PiOverlayRenderer(parent=None, source=memoryview(a), resolution=(480, 800),
                             format='rgba', rotation=90, layer=2, alpha=255)
 
 camera = mo.MMALCamera()
